@@ -12,7 +12,7 @@ footer.appendChild(copyright);
 
 
 
-const skills = ["javascript", "HTML", "Welding",];
+const skills = ["Javascript", "HTML", "Welding",];
 
 const skillsSection = document.getElementById("skills");
 
