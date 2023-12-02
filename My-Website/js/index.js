@@ -41,7 +41,7 @@ messageForm.addEventListener('submit', (e) => {
     <span>${userMessage}</span>
     `;
 
-    const removeButton = newMessage.createElement("button");
+    const removeButton = document.createElement("button");
     removeButton.innerText = "remove";
     removeButton.type = "button";
 
