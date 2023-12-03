@@ -5,34 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First Webpage</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dhurjati&family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <h1>Tye Christianson</h1>
-    <section>
-        <h2>About Me</h2>
-        <p>I am 33 years old. I grew up in North Dakota, I'm a welder in a fabrication shop and I'm currently taking
-            classes on Web Design.</p>
+    <h1 class="heading1">Tye Christianson</h1>
+    <section class="section">
+        <h2 id="aboutMe" class="headings">About Me</h2>
+        <p>My name is Ridge Tye Christianson, I am 33 years old. I grew up in North Dakota, I'm a welder in a
+            fabrication shop and I'm currently taking classes on Web Design.</p>
     </section>
-    <section>
-        <h2>Experience</h2>
-        <p>AMI, Streyle Masonry, Conveyors</p>
+    <section id="experience" class="section">
+        <h2 class="headings">Experience</h2>
+        <ul>
+            <li>AMI</li>
+            <li>Streyle Masonry</li>
+            <li>General Construction</li>
+        </ul>
     </section>
-    <section id="skills">
-        <h2>Skills</h2>
+    <section id="skills" class="section">
+        <h2 class="headings">Skills</h2>
         <ul>
 
         </ul>
     </section>
-    <section>
-        <h2>Connect</h2>
-        <p>tyechristiansontlm@gmail.com, https://github.com/TyeCtlm, https://www.linkedin.com/in/ridge-christianson/
-            /Users/ridgechristianson/intro-to-programming-2023/index.html</p>
+    <section id="connect" class="section">
+        <h2 class="headings">Connect</h2>
+        <a href="mailto:tyechristiansontlm@gmail.com">Email Me</a>
+        <br>
+        <a href="https://github.com/TyeCtlm">Check Out My GitHub Portfolio</a>
+        <br>
+        <a href="https://www.linkedin.com/in/ridge-christianson/">Lets Link Up on LinkedIn!</a>
+        <!-- /Users/ridgechristianson/intro-to-programming-2023/index.html</p> -->
     </section>
-    <section>
-        <h2>Leave a Message</h2>
-        <form name="leave_message">
+    <section id="form" class="section">
+        <h2 class="headings">Leave a Message</h2>
+        <form id="leaveMessage" name="leave_message">
             <label for="userName">Your Name</label>
             <br>
             <input type="text" id="userName" name="usersName" required="true">
@@ -48,8 +59,8 @@
             <button type="submit">Submit</button>
         </form>
     </section>
-    <section id="messages">
-        <h2>Messages</h2>
+    <section id="messages" class="section">
+        <h2 class="headings">Messages</h2>
         <ul></ul>
     </section>
     <footer></footer>

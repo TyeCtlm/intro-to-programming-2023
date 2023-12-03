@@ -26,11 +26,12 @@ for (let i = 0; i < skills.length; i++) {
 }
 const messageForm = document.getElementsByName("leave_message")[0];
 messageForm.addEventListener('submit', (e) => {
+    console.log('hello');
     e.preventDefault();
 
-    const userName = e.target.userName.value;
-    const userEmail = e.target.userEmail.value;
-    const userMessage = e.target.userMessage.value;
+    const userName = e.target.usersName.value;
+    const userEmail = e.target.usersEmail.value;
+    const userMessage = e.target.usersMessage.value;
 
     const messageSection = document.getElementById("messages");
     const messageList = messageSection.querySelector("ul");
