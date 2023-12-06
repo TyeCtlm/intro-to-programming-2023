@@ -1,3 +1,5 @@
+//Footer
+
 const today = new Date();
 
 const thisYear = today.getFullYear();
@@ -10,9 +12,9 @@ copyright.innerHTML = `Ridge ${thisYear}`;
 
 footer.appendChild(copyright);
 
+//Skills
 
-
-const skills = ["Javascript", "HTML", "Welding",];
+const skills = ["Javascript", "HTML", "Welding", "CSS"];
 
 const skillsSection = document.getElementById("skills");
 
@@ -24,6 +26,9 @@ for (let i = 0; i < skills.length; i++) {
     skill.innerText = skills[i];
     skillsList.appendChild(skill);
 }
+
+// Create Form
+
 const messageForm = document.getElementsByName("leave_message")[0];
 messageForm.addEventListener('submit', (e) => {
     console.log('hello');
@@ -49,6 +54,7 @@ messageForm.addEventListener('submit', (e) => {
     removeButton.addEventListener('click', (e) => {
         const entry = removeButton.parentNode;
         entry.remove();
+
         newMessage.appendChild(removeButton);
         messageList.appendChild(newMessage);
     })
