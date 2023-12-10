@@ -12,7 +12,7 @@ copyright.innerHTML = `Ridge ${thisYear}`;
 
 footer.appendChild(copyright);
 
-//Skills
+//Skill
 
 const skills = ["Javascript", "HTML", "Welding", "CSS"];
 
