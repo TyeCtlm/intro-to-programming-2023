@@ -1,0 +1,91 @@
+body {
+    text-align: center;
+    background-image: url(../images/luxury_background2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+}
+
+.section {
+    background-image: url('../images/cool-background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    text-align: center;
+    border: 3px solid #333;
+    padding: 20px;
+    margin: 20px;
+}
+
+.headings {
+    font-size: 24px;
+    font-weight: 600;
+    color: #007bff;
+}
+
+#heading1 {
+    color: goldenrod;
+}
+
+/* Experience */
+#experience li {
+    background-color: #007bff;
+    color: #fff;
+    list-style: none;
+}
+
+/* Skill */
+#skills li {
+    background-color: #007bff;
+    color: #fff;
+    list-style: none;
+}
+
+.connect {
+    color: #007bff;
+}
+
+/* Leave Message Form */
+#leaveMessage label {
+    font-size: 16px;
+    color: #333;
+}
+
+#leaveMessage input,
+#leaveMessage textarea {
+    font-size: 14px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#leaveMessage button {
+    font-size: 16px;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Messages */
+#messages li {
+    background-color: #d9edf7;
+    margin-bottom: 10px;
+    padding: 20px;
+    list-style: none;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
