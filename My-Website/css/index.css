@@ -1,23 +1,82 @@
+/* General Body Styling */
 body {
     text-align: center;
-    background-image: url(../images/luxury_background2.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    color: #333;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
     font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-.section {
-    background-image: url('../images/cool-background.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 10px;
-    text-align: center;
-    border: 3px solid #333;
-    padding: 20px;
+/* Header and Navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 500px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    border: #fff;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Container for About Me, Experience, and Skills sections */
+#content_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 95%;
+}
+
+#left_column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
     margin: 20px;
+    width: 65%;
+}
+
+#aboutMe {}
+
+/* Right column containing Experience and Skills */
+#right_column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+    margin-right: 20px;
+    width: 35%;
+
+}
+
+/* Section Styling */
+.section {
+    background-color: #262626;
+    border-radius: 10px;
+    border: 2px solid #444;
+    padding: 20px;
+    width: 100%;
 }
 
 .headings {
@@ -26,43 +85,52 @@ body {
     color: #007bff;
 }
 
-#heading1 {
-    color: goldenrod;
+/* Experience and Skills Section */
+#experience,
+#skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
 }
 
-/* Experience */
-#experience li {
-    background-color: #007bff;
-    color: #fff;
-    list-style: none;
-}
-
-/* Skill */
+#experience li,
 #skills li {
     background-color: #007bff;
     color: #fff;
     list-style: none;
+    padding: 10px;
+    border-radius: 5px;
 }
 
+/* Connect Section */
 .connect {
     color: #007bff;
 }
 
-/* Leave Message Form */
+/* Form Styling */
+#leaveMessage {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 500px;
+}
+
 #leaveMessage label {
     font-size: 16px;
-    color: #333;
+    color: #e0e0e0;
 }
 
 #leaveMessage input,
 #leaveMessage textarea {
     font-size: 14px;
     padding: 10px;
-    margin-bottom: 10px;
     border: 1px solid #007bff;
     border-radius: 5px;
-    width: 100%;
-    box-sizing: border-box;
+    background: #333;
+    color: #e0e0e0;
+    width: 95%;
 }
 
 #leaveMessage button {
@@ -74,12 +142,12 @@ body {
     cursor: pointer;
 }
 
-/* Messages */
+/* Messages Section */
 #messages li {
-    background-color: #d9edf7;
+    background-color: #262626;
+    color: #e0e0e0;
     margin-bottom: 10px;
     padding: 20px;
-    list-style: none;
     border-radius: 10px;
 }
 
@@ -88,4 +156,27 @@ footer {
     padding: 20px;
     background-color: #333;
     color: #fff;
+    width: 500px;
 }
+
+/* Responsive Design */
+/* @media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    #leaveMessage {
+        max-width: 100%;
+    }
+} */

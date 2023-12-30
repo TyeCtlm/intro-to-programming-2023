@@ -38,6 +38,15 @@ messageForm.addEventListener('submit', (e) => {
     const userEmail = e.target.usersEmail.value;
     const userMessage = e.target.usersMessage.value;
 
+    if (userName.trim() === "" || userEmail.trim() === "" || userMessage.trim() === "") {
+        alert("Please fill in all fields.");
+        return;
+    }
+    if (!/\S+@\S+\.\S+/.test(userEmail)) {
+        alert("Please enter a valid email address.");
+        return;
+    }
+
     const messageSection = document.getElementById("messages");
     const messageList = messageSection.querySelector("ul");
 
@@ -46,8 +55,6 @@ messageForm.addEventListener('submit', (e) => {
     <a href="mailto:${userEmail}">${userName}</a>: 
     <span>${userMessage}</span>
     `;
-    messageList.appendChild(newMessage);
-    console.log(newMessage);
 
     const removeButton = document.createElement("button");
     removeButton.innerText = "remove";
@@ -60,5 +67,6 @@ messageForm.addEventListener('submit', (e) => {
         entry.remove();
     })
 
+    messageList.appendChild(newMessage);
     e.target.reset();
 });

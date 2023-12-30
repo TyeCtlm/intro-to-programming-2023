@@ -1,3 +1,7 @@
+</body>
+
+</html>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,36 +16,57 @@
 </head>
 
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li class="navButton"><a href="#aboutMe">About Me</a></li>
+                <li class="navButton"><a href="#skills">Skills</a></li>
+                <li class="navButton"><a href="#experience">Experience</a></li>
+                <li class="navButton"><a href="#connect">Connect</a></li>
+                <li class="navButton"><a href="#form">Leave a Message</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <h1 id="heading1">Tye Christianson</h1>
-    <section class="section">
-        <h2 id="aboutMe" class="headings">About Me</h2>
 
-        <p>My name is Ridge Tye Christianson, I am 33 years old. I grew up in North Dakota, I'm a welder in a
-            fabrication shop and I'm currently taking classes on Web Design.</p>
-    </section>
-    <section id="experience" class="section">
-        <h2 class="headings">Experience</h2>
-        <ul>
-            <li>AMI</li>
-            <li>Streyle Masonry</li>
-            <li>General Construction</li>
-        </ul>
-    </section>
-    <section id="skills" class="section">
-        <h2 class="headings">Skills</h2>
-        <ul>
+    <div id="content_container">
+        <div id="left_column">
+            <section id="aboutMe" class="section">
+                <h2 class="headings">About Me</h2>
+                <p>My name is Ridge Tye Christianson, I am 33 years old. I grew up in North Dakota, I'm a welder in a
+                    fabrication shop and I'm currently taking classes on Web Design.</p>
+            </section>
+            <section id="connect" class="section">
+                <h2 class="headings">Connect</h2>
+                <a href="mailto:tyechristiansontlm@gmail.com" class="connect">Email Me</a>
+                <br>
+                <a href="https://github.com/TyeCtlm" class="connect">Check Out My GitHub Portfolio</a>
+                <br>
+                <a href="https://www.linkedin.com/in/ridge-christianson/" class="connect">Lets Link Up on LinkedIn!</a>
+            </section>
+        </div>
 
-        </ul>
-    </section>
-    <section id="connect" class="section">
-        <h2 class="headings">Connect</h2>
-        <a href="mailto:tyechristiansontlm@gmail.com" class="connect">Email Me</a>
-        <br>
-        <a href="https://github.com/TyeCtlm" class="connect">Check Out My GitHub Portfolio</a>
-        <br>
-        <a href="https://www.linkedin.com/in/ridge-christianson/" class="connect">Lets Link Up on LinkedIn!</a>
-        <!-- /Users/ridgechristianson/intro-to-programming-2023/index.html</p> -->
-    </section>
+        <div id="right_column">
+            <section id="experience" class="section">
+                <h2 class="headings">Experience</h2>
+                <ul>
+                    <li>AMI</li>
+                    <li>Streyle Masonry</li>
+                    <li>General Construction</li>
+                </ul>
+            </section>
+
+            <section id="skills" class="section">
+                <h2 class="headings">Skills</h2>
+                <ul>
+                    <!-- Skills will be populated here -->
+                </ul>
+            </section>
+        </div>
+
+    </div>
+
     <section id="form" class="section">
         <h2 class="headings">Leave a Message</h2>
         <form id="leaveMessage" name="leave_message">
@@ -60,14 +85,16 @@
             <button type="submit">Submit</button>
         </form>
     </section>
+
     <section id="messages" class="section">
         <h2 class="headings">Messages</h2>
         <ul></ul>
     </section>
-    <!--footer-->
-    <footer></footer>
-    <script src="js/index.js"></script>
 
+    <footer>
+        <!-- Footer content -->
+    </footer>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
