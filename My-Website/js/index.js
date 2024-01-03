@@ -14,14 +14,14 @@ footer.appendChild(copyright);
 
 //Skill
 
-const skills = ["Javascript", "HTML", "Welding", "CSS"];
+const skills = ['Construction', 'Coding', 'Welding', 'Cooking'];
 
 const skillsSection = document.getElementById("skills");
 
-const skillsList = skillsSection.querySelector("ul");
+const skillsList = skillsSection.querySelector("section");
 
 for (let i = 0; i < skills.length; i++) {
-    const skill = document.createElement("li");
+    const skill = document.createElement("p");
 
     skill.innerText = skills[i];
     skillsList.appendChild(skill);
@@ -51,9 +51,13 @@ messageForm.addEventListener('submit', (e) => {
     const messageList = messageSection.querySelector("ul");
 
     const newMessage = document.createElement("li");
+    const now = new Date();
+    const dateTimeString = now.toLocaleString();
     newMessage.innerHTML = `
-    <a href="mailto:${userEmail}">${userName}</a>: 
+    <a href="mailto:${userEmail}">${userName}</a>
+    <br> 
     <span>${userMessage}</span>
+    <div class="date">${dateTimeString}</div>
     `;
 
     const removeButton = document.createElement("button");

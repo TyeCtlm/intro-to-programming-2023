@@ -1,0 +1,273 @@
+/* General Body Styling */
+html,
+body {
+    text-align: center;
+    background-color: #333b3f;
+    color: #e6ffff;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Header and Navigation */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #36454f;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    padding: 5px 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+nav a {
+    color: #a7ffeb;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #00ffab;
+}
+
+#aboutMe {
+    margin: 10px;
+}
+
+/* Section Styling */
+.section {
+    background-color: #2f4f4f;
+    border-radius: 10px;
+    border: 2px solid #36454f;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.headings {
+    font-size: 24px;
+    font-weight: 600;
+    color: #20b2aa;
+    margin-bottom: 20px;
+}
+
+#content_container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+    max-width: 100%;
+    padding: 10px;
+    height: 500px;
+}
+
+/* Experience section */
+
+#experience p,
+#skills p {
+    background-color: #20b2aa;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#experience p:hover,
+#skills p:hover {
+    background-color: #32cd32;
+}
+
+#experience {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Skills Section */
+
+#skills {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Connect Section */
+#connect {
+    width: 30%;
+    height: 90%;
+}
+
+.connect {
+    color: #20b2aa;
+    transition: color 0.3s;
+    height: 90%;
+}
+
+.connect:hover {
+    color: #00ffab;
+}
+
+
+#form {
+    margin: 10px;
+}
+
+/* Form Styling */
+#leaveMessage {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#leaveMessage input,
+#leaveMessage textarea {
+    font-size: 14px;
+    padding: 10px;
+    border: 2px solid #20b2aa;
+    background: #36454f;
+    color: #e6ffff;
+}
+
+#leaveMessage button {
+    font-size: 16px;
+    padding: 10px;
+    background-color: #32cd32;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+#leaveMessage button:hover {
+    background-color: #28a745;
+}
+
+/* Messages Section */
+
+#messages {
+    margin: 10px;
+}
+
+#messages li {
+    background-color: #36454f;
+    color: #e6ffff;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Footer */
+
+footer {
+    padding: 20px;
+    background-color: #2f4f4f;
+    color: #fff;
+    width: 100%;
+}
+
+/* Mobile devices */
+@media only screen and (max-width: 600px) {
+    #content_container {
+        align-items: center;
+        flex-direction: column;
+        height: auto;
+        margin: 22px;
+    }
+
+    .section {
+        margin-bottom: 10px;
+    }
+
+    #experience h2 {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #experience {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #connect {
+        width: 100%;
+        height: 100%;
+    }
+
+    #skills {
+        width: 100%;
+    }
+}
+
+/* Tablet devices */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    #content_container {
+        align-items: center;
+        flex-direction: column;
+        height: auto;
+        margin: 22px;
+    }
+
+    .section {
+        margin-bottom: 15px;
+    }
+
+    #experience h2 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #experience {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 10px;
+    }
+
+    #connect {
+        width: 100%;
+        height: 100%;
+    }
+
+    #skills {
+        width: 100%;
+    }
+}
+
+/* Desktop devices */
+@media only screen and (min-width: 1025px) {
+    #content_container {
+        flex-direction: row;
+        height: 500px;
+    }
+
+    .section {
+        margin-bottom: 20px;
+    }
+}
