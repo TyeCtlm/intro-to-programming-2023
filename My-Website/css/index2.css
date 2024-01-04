@@ -95,11 +95,17 @@ nav a:hover {
     background-color: #32cd32;
 }
 
-#experience {
-    width: 20%;
+#experience h2 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+#experience {
+
+    width: 20%;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Skills Section */
@@ -180,6 +186,8 @@ nav a:hover {
 /* Footer */
 
 footer {
+    display: flex;
+    justify-content: center;
     padding: 20px;
     background-color: #2f4f4f;
     color: #fff;
@@ -199,16 +207,10 @@ footer {
         margin-bottom: 10px;
     }
 
-    #experience h2 {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
     #experience {
         width: 100%;
         display: flex;
-        justify-content: center;
+        align-items: center;
         flex-wrap: wrap;
     }
 
@@ -235,19 +237,11 @@ footer {
         margin-bottom: 15px;
     }
 
-    #experience h2 {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
     #experience {
         width: 100%;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        margin: 10px;
     }
 
     #connect {
@@ -258,16 +252,28 @@ footer {
     #skills {
         width: 100%;
     }
-}
 
-/* Desktop devices */
-@media only screen and (min-width: 1025px) {
-    #content_container {
-        flex-direction: row;
-        height: 500px;
+    /* Desktop devices */
+    @media only screen and (min-width: 1025px) {
+        #content_container {
+            flex-direction: row;
+            height: 500px;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
     }
 
-    .section {
-        margin-bottom: 20px;
+
+    /* Desktop devices */
+    @media only screen and (min-width: 1025px) {
+        #content_container {
+            flex-direction: row;
+            height: 500px;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
     }
-}
