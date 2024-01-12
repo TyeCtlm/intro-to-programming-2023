@@ -74,3 +74,27 @@ messageForm.addEventListener('submit', (e) => {
     messageList.appendChild(newMessage);
     e.target.reset();
 });
+
+// ajax
+
+const githubRequest = new XMLHttpRequest();
+const url = "https://api.github.com/users/TyeCtlm/repos"
+
+githubRequest.open('GET', url);
+githubRequest.send();
+
+githubRequest.addEventListener('load', function () {
+    const repos = JSON.parse(this.response);
+    const projectSection = document.getElementById("projects");
+    const projectList = projectSection.querySelector("ul");
+
+    for (let i = 0; i < repos.length; i++) {
+        const project = document.createElement("li");
+        project.innerHTML = `
+        <a href="${repos[i].html_url}">${repos[i].name}</a>
+        
+        `;
+        projectList.appendChild(project);
+    } console.log(repos[0]);
+});
+// <p>${repos[i].description}</p>
