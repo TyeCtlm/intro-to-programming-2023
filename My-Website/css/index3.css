@@ -2,7 +2,7 @@
 html,
 body {
     text-align: center;
-    background-color: #333b3f;
+    background-color: #00ffab;
     color: #e6ffff;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     line-height: 1.6;
@@ -79,10 +79,17 @@ nav a:hover {
     height: 500px;
 }
 
-/* Experience section */
+/* Experience, Skills, Connect Sections */
+#experience,
+#skills,
+#connect {
+    display: flex;
+    flex-direction: column;
+}
 
 #experience p,
-#skills p {
+#skills p,
+#connect a {
     background-color: #20b2aa;
     color: #fff;
     padding: 10px;
@@ -102,29 +109,17 @@ nav a:hover {
 }
 
 #experience {
-
     width: 20%;
-    display: flex;
-    flex-direction: column;
 }
-
-/* Skills Section */
 
 #skills {
     width: 20%;
-    display: flex;
-    flex-direction: column;
 }
 
-/* Connect Section */
 #connect {
-    width: 30%;
-    height: 90%;
-}
-
-.connect {
     color: #20b2aa;
     transition: color 0.3s;
+    width: 30%;
     height: 90%;
 }
 
@@ -132,16 +127,40 @@ nav a:hover {
     color: #00ffab;
 }
 
+/* Projects Section */
+#projects_container {
+    margin: 10px;
+}
 
+#projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 20px auto;
+    max-width: 100%;
+    padding: 10px;
+    height: 500px;
+}
+
+#projects li {
+    list-style: none;
+    background-color: #20b2aa;
+    color: #e6ffff;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: 35px;
+}
+
+/* Form Styling */
 #form {
     margin: 10px;
 }
 
-/* Form Styling */
 #leaveMessage {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 100%;
     max-width: 400px;
     margin: 0 auto;
 }
@@ -170,7 +189,6 @@ nav a:hover {
 }
 
 /* Messages Section */
-
 #messages {
     margin: 10px;
 }
@@ -184,96 +202,8 @@ nav a:hover {
 }
 
 /* Footer */
-
 footer {
     display: flex;
     justify-content: center;
     padding: 20px;
-    background-color: #2f4f4f;
-    color: #fff;
-    width: 100%;
 }
-
-/* Mobile devices */
-@media only screen and (max-width: 600px) {
-    #content_container {
-        align-items: center;
-        flex-direction: column;
-        height: auto;
-        margin: 22px;
-    }
-
-    .section {
-        margin-bottom: 10px;
-    }
-
-    #experience {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-
-    #connect {
-        width: 100%;
-        height: 100%;
-    }
-
-    #skills {
-        width: 100%;
-    }
-}
-
-/* Tablet devices */
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-    #content_container {
-        align-items: center;
-        flex-direction: column;
-        height: auto;
-        margin: 22px;
-    }
-
-    .section {
-        margin-bottom: 15px;
-    }
-
-    #experience {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    #connect {
-        width: 100%;
-        height: 100%;
-    }
-
-    #skills {
-        width: 100%;
-    }
-
-    /* Desktop devices */
-    @media only screen and (min-width: 1025px) {
-        #content_container {
-            flex-direction: row;
-            height: 500px;
-        }
-
-        .section {
-            margin-bottom: 20px;
-        }
-    }
-
-
-    /* Desktop devices */
-    @media only screen and (min-width: 1025px) {
-        #content_container {
-            flex-direction: row;
-            height: 500px;
-        }
-
-        .section {
-            margin-bottom: 20px;
-        }
-    }
