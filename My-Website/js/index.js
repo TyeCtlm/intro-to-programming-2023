@@ -12,7 +12,7 @@ copyright.innerHTML = `Ridge ${thisYear}`;
 
 footer.appendChild(copyright);
 
-//Skill
+//Skills
 
 const skills = ['Construction', 'Coding', 'Welding', 'Cooking'];
 
