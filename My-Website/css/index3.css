@@ -97,8 +97,9 @@ nav a:hover {
     transition: background-color 0.3s;
 }
 
-#experience p:hover,
-#skills p:hover {
+
+#connect a:hover,
+#projects li:hover {
     background-color: #32cd32;
 }
 
@@ -194,6 +195,7 @@ nav a:hover {
 }
 
 #messages li {
+    list-style: none;
     background-color: #36454f;
     color: #e6ffff;
     margin-bottom: 10px;
